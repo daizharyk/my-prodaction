@@ -19,5 +19,9 @@ articleCard.append(linkbt);
 return articleCard;
 });
 
+export function getAllArticles(){
+  return articlesData.articles
+};
+
 
 

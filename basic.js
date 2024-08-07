@@ -1,5 +1,6 @@
 import {articleElements} from "./articlesService.js"
 import articlesData from "./article.json" with { type: "json" };
+import { getAllArticles } from "./articlesService.js";
 
 
 let allArticles = document.getElementById("allarticles");
@@ -49,7 +50,6 @@ const currentArticle = articlesData.articles.find((article) =>{
   return article.id === Number(articleId)
 });
 
-
 if(currentArticle) {
     const { name, text , id } = currentArticle;
     let articleCard = document.createElement("article");
@@ -66,7 +66,5 @@ linkbt.textContent = "Читать далее";
 articleCard.append(linkbt);
     articleSection.appendChild(articleCard);
 };
-
-
 
 
