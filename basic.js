@@ -3,6 +3,8 @@ import articlesData from "./article.json" with { type: "json" };
 import { getAllArticles } from "./articlesService.js";
 
 
+
+
 let allArticles = document.getElementById("allarticles");
 let contacts = document.getElementById("contacts");
 
@@ -37,15 +39,8 @@ articleSection.append(...articleElements);
 
 
 
-
-
-
-
 const params = new URLSearchParams(location.search)
-
-
 const articleId = params.get("articleId");
-
 const currentArticle = articlesData.articles.find((article) =>{
   return article.id === Number(articleId)
 });

@@ -1,6 +1,11 @@
 
 import articlesData from "./article.json" with { type: "json" };
 
+export function getAllArticles(){
+  return articlesData.articles
+};
+
+
 
 export let articleElements = articlesData.articles.map((article) =>{
 let { name , text , id} = article;
@@ -18,10 +23,6 @@ linkbt.textContent = "Читать далее";
 articleCard.append(linkbt);
 return articleCard;
 });
-
-export function getAllArticles(){
-  return articlesData.articles
-};
 
 
 
