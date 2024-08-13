@@ -17,6 +17,8 @@ if (article) {
 
   const textElement = document.getElementById("text");
   textElement.textContent = text;
+
+
 } else {
   alert(`Article with ID ${articleId} not found.`)
 }
