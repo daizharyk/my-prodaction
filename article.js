@@ -1,4 +1,4 @@
-import articlesData from "./article.json" with { type: "json" };
+
 
 import {getElementById} from "./articlesService.js";
 
