@@ -31,9 +31,11 @@ contacts.addEventListener("click" , (e)=>{
 });
 
 
-
-
+async function displayArticles(articles) {
+  
+}
 const articles = await fetchAllArticles();
+displayArticles(articles);
 
 let articleElements = articles.map((article) =>{
   let { title, body, id } = article;
