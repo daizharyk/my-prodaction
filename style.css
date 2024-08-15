@@ -4,7 +4,7 @@
 * {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -38,14 +38,21 @@ a:visited {
 
 button {
   background-color: #f0efeb;
+  font-size: 15px;
+  width: 90px;
+  height: 40px;
   border: none;
   padding: 8px;
-  border-radius: 7px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 button:hover{
-  background-color: #eae2b7;
+  background-color: #ee67ca;
+}
+
+.button {
+  flex: 3;
 }
 
 
@@ -117,7 +124,6 @@ button:hover{
 .flex-container {
   display: flex;
   margin: 5px;
-  /* padding: 5px; */
 }
 
 .diraction-column {
@@ -130,9 +136,6 @@ button:hover{
   align-self: center;
 }
 
-.button {
-  flex: 3;
-}
 
 .navigation ul {
   display: flex;
@@ -233,3 +236,4 @@ button:hover{
 .logo:hover {
   transform:  scale(1.2);
 }
+

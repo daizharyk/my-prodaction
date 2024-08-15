@@ -1,22 +1,21 @@
 
-
-import {getElementById} from "./articlesService.js";
+import {fetchPostById} from "./articlesService.js";
 
 const params = new URLSearchParams(location.search)
 
 const articleId = params.get("articleId");
 
 
-const article = getElementById(Number(articleId));
+const article = await fetchPostById(Number(articleId));
 
 if (article) {
-  const {name , text} = article;
+  const { title, body} = article;
 
   const titleElement = document.getElementById("title");
-  titleElement.textContent = name;
+  titleElement.textContent = title;
 
   const textElement = document.getElementById("text");
-  textElement.textContent = text;
+  textElement.textContent = body;
 
 
 } else {

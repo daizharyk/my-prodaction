@@ -1,14 +1,26 @@
-
-import articlesData from "./article.json" with { type: "json" };
-
 export function getAllArticles(){
-  return articlesData.articles.length
+  return fetchAllArticles.length
 };
 
 
-export function getElementById(id) {
-  return articlesData.articles.find(article => article.id === id);
+export async function fetchAllArticles(limit = 10) {
+  const response = await fetch(`https://dummyjson.com/posts?limit=${limit}`);
+  const data = await response.json();
+  return data.posts;
 }
 
 
+
+
+export async function fetchPostById(Id) {
+  const response = await fetch(`https://dummyjson.com/posts/${Id}`);
+  const post = await response.json();
+  return post;
+};
+
+export async function fetchAllArticlesCount() {
+  const response = await fetch('https://dummyjson.com/posts');
+  const data = await response.json();
+  return data.posts.length
+}
 
