@@ -32,8 +32,8 @@ contacts.addEventListener("click" , (e)=>{
 
 
 
-(async function displayArticles() {
-  const articles = await fetchAllArticles();
+
+const articles = await fetchAllArticles();
 
 let articleElements = articles.map((article) =>{
   let { title, body, id } = article;
@@ -61,7 +61,7 @@ let articleElements = articles.map((article) =>{
   button.addEventListener("click", nextArticlesList);
   button.textContent = "Далее";
   articleSection.append(button);
-})();
+
 
 let skipArticles = 0;
 async function nextArticlesList() {
@@ -69,7 +69,7 @@ async function nextArticlesList() {
   ).then((res) => res.json());
   console.log(response);
   
-  displayArticles(data.posts);
+  displayArticles(response.posts);
   skipArticles += 10;
 }
 

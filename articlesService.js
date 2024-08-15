@@ -1,6 +1,4 @@
-export function getAllArticles(){
-  return fetchAllArticles.length
-};
+
 
 
 export async function fetchAllArticles(limit = 10) {
@@ -8,7 +6,6 @@ export async function fetchAllArticles(limit = 10) {
   const data = await response.json();
   return data.posts;
 }
-
 
 
 
