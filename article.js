@@ -23,3 +23,10 @@ if (article) {
 }
 
   
+
+async  function getUsers(names) {
+  let gitResponse = await fetch('https://api.github.com/users/USERNAME');
+  let data = await data.json();
+  console.log(data);
+  
+}
