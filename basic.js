@@ -1,5 +1,5 @@
 
-import { fetchAllArticles,fetchAllArticlesCount } from "./articlesService.js";
+import { fetchAllArticles } from "./articlesService.js";
 
 let allArticles = document.getElementById("allarticles");
 let contacts = document.getElementById("contacts");

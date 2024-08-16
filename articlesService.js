@@ -13,9 +13,3 @@ export function fetchPostById(Id) {
     .then((post) =>  post);
 }
 
-export  function fetchAllArticlesCount() {
-  return fetch('https://dummyjson.com/posts')
-  .then((response)=> response.json())
-  .then((post)=> post.posts.length
-  );
-}
