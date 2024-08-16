@@ -6,7 +6,7 @@ const params = new URLSearchParams(location.search)
 const articleId = params.get("articleId");
 
 
-const article = await fetchPostById(Number(articleId));
+const article = await fetchPostById(articleId);
 
 if (article) {
   const { title, body} = article;

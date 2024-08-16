@@ -32,7 +32,7 @@ contacts.addEventListener("click" , (e)=>{
 
 
 
- function displayArticles(articles) {
+function displayArticles(articles) {
   articleSection.innerHTML = "";
 
   let header = document.createElement("h2");
@@ -69,6 +69,7 @@ let articleElements = articles.map((article) =>{
 }
 
 const articles = await fetchAllArticles();
+
   displayArticles(articles);
 
 let skipArticles = 0;
