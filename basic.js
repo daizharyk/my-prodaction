@@ -33,6 +33,11 @@ contacts.addEventListener("click" , (e)=>{
 
 
 async function displayArticles(articles) {
+  articleSection.innerHTML = "";
+  
+  let header = document.createElement("h2");
+  header.textContent = "Статьи";
+  articleSection.append(header);
   
 let articleElements = articles.map((article) =>{
   let { title, body, id } = article;
@@ -54,7 +59,7 @@ let articleElements = articles.map((article) =>{
   articleCard.append(linkbt);
   return articleCard;
   });
-  articleSection.innerHTML = "";
+
   articleSection.append(...articleElements);
 
   let button = document.createElement("button");
