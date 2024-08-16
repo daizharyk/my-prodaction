@@ -6,10 +6,9 @@ let contacts = document.getElementById("contacts");
 
 
 
+const articles = await fetchAllArticles();
 
-
-  const count = await fetchAllArticlesCount();
-  allArticles.querySelector("a").textContent = `Все статьи  (${count})`;
+  allArticles.querySelector("a").textContent = `Все статьи  (${articles.length})`;
 
 
 
@@ -68,7 +67,7 @@ let articleElements = articles.map((article) =>{
   articleSection.append(button);
 }
 
-const articles = await fetchAllArticles();
+
 
   displayArticles(articles);
 
