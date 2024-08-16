@@ -20,4 +20,3 @@ export async function fetchAllArticlesCount() {
   const data = await response.json();
   return data.posts.length
 }
-

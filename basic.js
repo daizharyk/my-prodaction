@@ -32,9 +32,9 @@ contacts.addEventListener("click" , (e)=>{
 
 
 
-async function displayArticles(articles) {
+ function displayArticles(articles) {
   articleSection.innerHTML = "";
-  
+
   let header = document.createElement("h2");
   header.textContent = "Статьи";
   articleSection.append(header);
@@ -81,7 +81,7 @@ async function nextArticlesList() {
   skipArticles += 10;
 }
 
-nextArticlesList()
+
 
   
 
