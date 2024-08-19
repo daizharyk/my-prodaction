@@ -20,5 +20,4 @@ if (article) {
 
 } else {
   alert(`Article with ID ${articleId} not found.`)
-}
-
+} 

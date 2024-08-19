@@ -80,9 +80,5 @@ async function nextArticlesList() {
 
 
 
-  
-
-
-
 
 
