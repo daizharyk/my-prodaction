@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, "src/index.js"),
     article: path.resolve(__dirname, "src/article.js"),
+    articleService: path.resolve(__dirname, "src/articleService.js"),
   },
     output:{
       path: path.resolve(__dirname, "dist"),
