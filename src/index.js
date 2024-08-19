@@ -1,5 +1,5 @@
 import { fetchAllArticles } from "./articlesService.js";
-
+import "./style.css"
 let allArticles = document.getElementById("allarticles");
 let contacts = document.getElementById("contacts");
 

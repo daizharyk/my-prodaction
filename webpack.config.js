@@ -6,7 +6,6 @@ module.exports = {
   entry: {
     main: path.resolve(__dirname, "src/index.js"),
     article: path.resolve(__dirname, "src/article.js"),
-    articleServicer: path.resolve(__dirname, "src/articleService.js"),
   },
     output:{
       path: path.resolve(__dirname, "dist"),
@@ -26,7 +25,7 @@ module.exports = {
 module: {
   rules: [
     {
-    test: /\.(png|svg|jpg|jpeg|gif)/i,
+    test: /\.(png|svg|jpg|jpeg|gif)$/i,
     type: "asset/resource",
   },
   {

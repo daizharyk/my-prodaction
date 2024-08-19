@@ -1,4 +1,4 @@
-
+import "./style.css"
 import {fetchPostById} from "./articlesService.js";
 
 const params = new URLSearchParams(location.search)

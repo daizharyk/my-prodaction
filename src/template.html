@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     
@@ -23,13 +22,15 @@
       <div class="section_element">
         <h2>Обо мне</h2>
         <img
-          src="PXL_20220805_145802207.jpg"
+        src="<%= require('./assets/PXL_20220805_145802207.jpg') %>"
           width="250"
           alt="Мой фотография"
         />
         <p>Меня зовут Дидар я работаю геологом , также изучаю вэб разработку</p>
         <a href="https://www.instagram.com/d.motion_design/"  target="_blank"
-          ><img class="logo" src="instagram_icon.png" width="30" alt="instagram logo"></a>
+          ><img class="logo" 
+          src="<%= require('./assets/instagram_icon.png') %>"
+          width="30" alt="instagram logo"></a>
       </div>
       <div class="section_element">
         <h3>Мои хобби</h3>
