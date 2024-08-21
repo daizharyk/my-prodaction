@@ -208,19 +208,6 @@ button:hover{
 }
 
 
-.backend {
-  background-color: #daf0ee;
-  color: #132a13;
-}
-
-.frontend {
-  background-color: #eae2b7;
-  color: #132a13;
-}
-.fullstack{
-  background-color: #283618;
-  color: #edf2f4;
-}
 
 .content a:hover {
   color: #ee9b00;
